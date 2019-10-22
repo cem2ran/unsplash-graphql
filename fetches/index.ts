@@ -1,7 +1,7 @@
 import getPhotos from './getPhotos';
 import downloadPhoto from './downloadPhoto';
-import me from './me';
+import user from './user';
 import getPhotoById from './getPhotoById';
 import likePhoto from './likePhoto';
 
-export { downloadPhoto, getPhotos, me, getPhotoById, likePhoto };
+export { downloadPhoto, getPhotos, user, getPhotoById, likePhoto };

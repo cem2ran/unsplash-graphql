@@ -1,7 +1,7 @@
 // import  from 'apollo-server-micro'
 import {
   getPhotos,
-  me,
+  user,
   likePhoto,
   getPhotoById,
   downloadPhoto,
@@ -49,7 +49,10 @@ const resolvers = {
       const promise = await getPhotoById(args);
       return promise.json();
     },
-    me: async () => me(),
+    user: async (_, args) => {
+      const promise = await user(args);
+      return promise.json()
+    },
   },
 };
 

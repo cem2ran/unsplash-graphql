@@ -40,7 +40,7 @@ const user = gql`
   }
 
   type Query {
-    me: String!
+    user(username: ID!): User!
   }
 `;
 
