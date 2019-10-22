@@ -16,6 +16,9 @@ const user = gql`
     total_collections: Int!
     total_likes: Int!
     total_photos: Int!
+    followers_count: Int!
+    following_count: Int!
+    downloads: Int!
     profile_image: UserProfileImage!
     links: UserLinks!
   }
